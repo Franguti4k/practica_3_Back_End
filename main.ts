@@ -2,7 +2,7 @@ import { MongoClient, ObjectId } from "mongodb";
 import type { NinoModel, LugarModel } from "./types.ts";
 import { fromModelToNino, fromModelToLugar } from "./utils.ts";
 
-const MONGO_URL = Deno.env.get("MONGO_URL");
+const MONGO_URL = "mongodb+srv://Franguti:Password@clusternebrija.rop9d.mongodb.net/?retryWrites=true&w=majority&appName=ClusterNebrija"
 if (!MONGO_URL) {
   console.error("MONGO_URL is not set");
 
